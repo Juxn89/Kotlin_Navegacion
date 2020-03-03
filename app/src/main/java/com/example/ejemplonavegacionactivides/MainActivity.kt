@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val boton = findViewById<Button>(R.id.button_main)
         boton.setOnClickListener {
             val intent = Intent(this, ActividadB::class.java)
+            intent.putExtra("MENSAJE", "Hacia actividad B")
             startActivity(intent)
         }
     }
